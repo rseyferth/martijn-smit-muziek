@@ -1,0 +1,210 @@
+@import url(http://fonts.googleapis.com/css?family=Satisfy|Roboto:300,700);
+/* line 17, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../../sass/components/_basics.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 7, ../../sass/components/_basics.scss */
+body, html {
+  font-family: "Roboto";
+  font-size: 16px;
+  color: #3d2f0a;
+  background: black;
+}
+@media (min-width: 600px) {
+  /* line 7, ../../sass/components/_basics.scss */
+  body, html {
+    background: url('../img/background-desktop.png?1397823658') repeat-y black;
+  }
+}
+
+/* line 25, ../../sass/components/_basics.scss */
+h1 {
+  font-size: 2.5em;
+  font-family: "Satisfy";
+}
+
+/* line 32, ../../sass/components/_basics.scss */
+h2 {
+  font-size: 1.5em;
+  font-family: "Satisfy";
+  margin-top: 2em;
+}
+
+/* line 40, ../../sass/components/_basics.scss */
+ul {
+  padding: 10px 20px;
+  list-style: disc;
+}
+/* line 45, ../../sass/components/_basics.scss */
+ul li {
+  line-height: 1.5em;
+}
+
+/* line 1, ../../sass/components/_header.scss */
+body > header {
+  background: url('../img/divider-mobile.png?1397823657') bottom left no-repeat, #f4e8ca;
+  padding: 20px 20px 50px 20px;
+}
+/* line 7, ../../sass/components/_header.scss */
+body > header h1 {
+  margin-bottom: 0.25em;
+}
+/* line 13, ../../sass/components/_header.scss */
+body > header p {
+  display: inline-block;
+  line-height: 1.25em;
+  margin-right: 1em;
+}
+/* line 19, ../../sass/components/_header.scss */
+body > header p a {
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 22, ../../sass/components/_header.scss */
+body > header p a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 600px) {
+  /* line 1, ../../sass/components/_header.scss */
+  body > header {
+    background: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+  /* line 38, ../../sass/components/_header.scss */
+  body > header h1 {
+    margin-bottom: 2em;
+  }
+  /* line 44, ../../sass/components/_header.scss */
+  body > header p {
+    display: block;
+    position: relative;
+  }
+  /* line 48, ../../sass/components/_header.scss */
+  body > header p a {
+    display: block;
+    margin-bottom: 1em;
+  }
+}
+
+/* line 1, ../../sass/components/_links.scss */
+a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+@media (min-width: 600px) {
+  /* line 9, ../../sass/components/_links.scss */
+  a[itemprop=telephone] {
+    -webkit-pointer-events: none;
+    -moz-pointer-events: none;
+    pointer-events: none;
+    text-decoration: none;
+  }
+}
+
+/* line 1, ../../sass/components/_main.scss */
+section.main {
+  padding: 20px 20px 50px 20px;
+  color: #f4e8ca;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  /* line 1, ../../sass/components/_main.scss */
+  section.main {
+    padding: 40px;
+    padding-left: 400px;
+  }
+}
+/* line 16, ../../sass/components/_main.scss */
+section.main article {
+  font-size: 0.825em;
+  line-height: 1.5em;
+  max-width: 600px;
+  margin-bottom: 4em;
+}
+/* line 22, ../../sass/components/_main.scss */
+section.main article header {
+  margin-bottom: 2em;
+}
+/* line 28, ../../sass/components/_main.scss */
+section.main article p {
+  display: block;
+  width: 100%;
+  text-align: justify;
+  margin: 1em 0;
+}
+/* line 42, ../../sass/components/_main.scss */
+section.main article .picture {
+  float: right;
+  margin: 2px 2px 20px 20px;
+}

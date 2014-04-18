@@ -1,0 +1,58 @@
+body > header {
+
+	@include background(image-url('divider-mobile.png') bottom left no-repeat, $background-light);
+	padding: 20px 20px 50px 20px;
+
+
+	h1 {
+
+		margin-bottom: 0.25em;
+
+	}
+
+	p {
+		display: inline-block;
+		line-height: 1.25em;
+
+		margin-right: 1em;
+
+		a {
+			font-weight: bold;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+	}
+
+	@include for-desktop {
+
+		background: none;
+
+		position: fixed;
+		top: 20px;
+		left: 20px;
+
+
+		h1 {
+
+			margin-bottom: 2em;
+
+		}
+
+		p {
+
+			display: block;
+			position: relative;
+			a {
+				display: block;
+				margin-bottom: 1em;
+			}
+
+		}
+
+	}
+
+
+}

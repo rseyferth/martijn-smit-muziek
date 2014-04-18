@@ -1,0 +1,52 @@
+* {
+
+	@include box-sizing(border-box);
+
+}
+
+body, html {
+
+	font-family: $font-body;
+	font-size: 16px;
+	color: $text-dark;
+
+	@include background(#000);
+
+	@include for-desktop {
+
+		@include background(image-url('background-desktop.png') repeat-y #000);
+
+	}
+
+
+}
+
+
+h1 {
+
+	font-size: 2.5em;
+	font-family: $font-header;
+
+}
+
+h2 {
+
+	font-size: 1.5em;
+	font-family: $font-header;
+	margin-top: 2em;
+
+}
+
+ul {
+
+	padding: 10px 20px;
+	list-style: disc;
+
+	li {
+
+		line-height: 	1.5em;
+
+
+	}
+
+}

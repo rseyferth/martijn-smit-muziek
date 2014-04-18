@@ -1,0 +1,18 @@
+a {
+
+	text-decoration: underline;
+	color: inherit;
+
+}
+
+
+a[itemprop=telephone] {
+
+	@include for-desktop {
+
+		@include pointer-events(none);
+		text-decoration: none;
+
+	}
+
+}
